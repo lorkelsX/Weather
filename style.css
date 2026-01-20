@@ -210,9 +210,10 @@ button{
     .inputContainer input{
         width: 150px;
     }
-    .savedLocations button {
+    #backBtn {
         display: flex;
         width: 33px;
     }
+
 
 }
