@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat' , sans-serif;
+    user-select: none;
+}
+.wrap{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: #3c6782;
+    background: linear-gradient(90deg, rgba(60, 103, 130, 1) 5%, rgba(147, 173, 199, 1) 31%,
+    rgba(135, 168, 212, 1) 54%, rgba(153, 178, 204, 1) 68%, rgba(153, 178, 204, 1) 78%, 
+    rgba(83, 137, 237, 1) 95%);
+    
+}
+.savedLocations{
+    padding: 15px;
+    margin-top: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    height: 80vh;
+    overflow-y: auto;
+    scrollbar-color: #000;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scrollbar-width: none;
+
+}
+#backBtn{
+    display: none;
+}
+.location{
+    padding-top: 15px;
+    margin-top: 30px;
+    width: 500px;
+    height: 100px;
+    background-color: #657e96;
+    opacity: 50%;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.weatherCard{
+    padding-top: 15px;
+    margin-top: 30px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+
+}
+.infoContainer{
+    padding-top: 15px;
+    margin-top: 30px;
+    min-width: 300px;
+    height: 300px;
+    background-color: #657e96;
+    opacity: 50%;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.infoContainer .tempAndClouds i{
+    color: #fff;
+    font-size: 60px;
+}
+.container {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.cityNameAndCountryFlag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.infoContainer .humidityContainer i{
+    font-size: 20px;
+}
+.infoContainer i{
+    color: #fff;
+    font-size: 30px;
+}
+.tempAndClouds{
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputContainer{
+    gap: 10px;
+    opacity: 50%;
+    border-radius: 30px;
+    margin-top :30px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.inputContainer input{
+
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+}
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: #eee427;
+    cursor: pointer;
+}
+.humidityAndPressure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.arrowContainer i{
+    font-size: 20px;
+}
+.wind{
+    gap: 20px;
+}
+.advice{
+    padding-top: 15px;
+    width: 300px;
+    background-color: #657e96;
+    opacity: 50%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+    font-weight: 400;
+}
+.location div {
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 30px;
+
+}
+.location img {
+    width: 50px;
+    border-radius: 22px
+}
+.location button {
+    padding: 15px;
+    background-color: #657e96;
+    border: none;
+    cursor: pointer;
+}
+.location i {
+    font-size: 25px;
+    color: red;
+}
+#savedBtn{
+    display: none;
+}
+#error{
+    color: red;
+    display: none;
+    width: 300px;
+}
+#cityName{
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+#flag img{
+    width: 50px;
+    border-radius: 22px;
+}
+
+@media screen and (max-width: 880px) {
+    .savedLocations{
+        display: none;
+    }
+    #savedBtn{
+        display: flex;
+    }
+    .inputContainer input{
+        width: 150px;
+    }
+    .savedLocations button {
+        display: flex;
+        width: 33px;
+    }
+
+}

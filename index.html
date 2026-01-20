@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="Papirus-Team-Papirus-Apps-Weather.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="wrap">
+         <!-- WRAP -->
+         <div class="savedLocations" id="savedLocations">
+            <button id="backBtn"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+
+
+        <div class="weatherCard">
+            <!-- WeatherCard -->
+
+                <div class="infoContainer">
+                    <!-- infoContainer -->
+                    <div class="tempAndClouds">
+                    <div id="clouds"></div>    
+                    <div id="temp"></div>
+                     </div>
+
+                    <div class="cityNameAndCountryFlag">
+                        <div id="cityName"></div>
+                        <div id="flag"></div>
+                    </div>
+
+                    <div class="humidityAndPressure">
+                    <div class="container">
+                        <i class="fa-solid fa-droplet"></i>
+                        <div id="humidity"></div>
+                     </div>
+
+                    <div class="container">
+                        <i class="fa-solid fa-arrow-up"></i>
+                        <div id="pressure"></div>
+                    </div>
+
+                    </div>
+
+                    <div class="container wind">
+                        <p>Wind:</p>
+                        <div id="windSpeed"></div>
+                        <div class="arrowContainer">
+                            <i class="fa-solid fa-arrow-up"></i> 
+                        </div>
+
+                    </div>
+                    
+
+                    <!-- infoContainer END -->
+                </div>
+                <div class="advice" id="advice"></div>
+
+
+                <div class="inputContainer">
+                    <!-- inputContainer -->
+                    <input type="text" id="city" placeholder="City">
+                    <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button id="addLocation"><i class="fa-solid fa-plus"></i> </button>
+                    
+                    <button id="savedBtn"><i class="fa-regular fa-bookmark"></i> </button>
+
+                    <!-- inputContainer END -->
+                </div>
+                <div id="error"><p>City not found</p></div>
+                
+
+
+
+            
+            
+            <!-- WeatherCard END -->
+        </div>
+
+
+
+
+
+        <!-- WRAP END -->
+    </div>
+
+
+
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
